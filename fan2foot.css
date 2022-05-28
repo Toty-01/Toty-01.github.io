@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+}
+.logo {
+  width: 80px;
+  border-radius: 50%;
+}
+.nav-link {
+  font-size: 1.5rem;
+}
+.bg-img {
+  background-image: url(pelouse.jpg);
+  object-fit: cover;
+}
+h1 {
+  padding-top: 2rem;
+  font-size: 3.4rem;
+  text-decoration: underline;
+}
+.ball-img {
+  width: 80px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  animation: ballon 6s ease-in-out infinite;
+}
+@keyframes ballon {
+  0% {
+    transform: rotate(220deg);
+  }
+  50% {
+    transform: translateX(81vw);
+  }
+  100% {
+    transform: rotate(220deg);
+    transform: rotateX(-81vw);
+  }
+}
+.carousel-item > img {
+   max-height: 500px;
+   object-fit: cover;
+}
+footer {
+  background: rgb(198, 236, 249);
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+h2 {
+  margin-top: 1rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+footer > ul {
+  list-style-type: none;
+  margin-top: 2rem;
+  text-align: center;
+}
+.footer-logo {
+  width: 45px;
+}
