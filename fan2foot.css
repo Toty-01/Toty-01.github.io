@@ -11,6 +11,7 @@ body {
 .bg-img {
   background-image: url(pelouse.jpg);
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 h1 {
   padding-top: 2rem;
@@ -44,16 +45,37 @@ footer {
   padding: 1rem;
   padding-bottom: 2rem;
 }
-h2 {
-  margin-top: 1rem;
+
+h3 {
   font-weight: bolder;
   text-decoration: underline;
 }
-footer > ul {
+footer > ul{
   list-style-type: none;
   margin-top: 2rem;
+  margin-left: -2rem;
   text-align: center;
 }
 .footer-logo {
   width: 45px;
+}
+.copyright {
+  list-style-type: none;
+}
+/*----------------responsive--------------------*/
+@media screen and (min-width:768px) {
+  .card {
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .footer-list > li.mt-2 {
+    display: inline;
+  }
+  .table {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #btn-event {
+    margin-left: 42%;
+  }
 }

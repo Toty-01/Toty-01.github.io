@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="fan2foot.css">
-  <title>Site association football</title>
+  <title>fan2foot</title>
+  <meta name="description" content="L'association de passionés de football de l'ain oraganise des evenements sur le theme du foot.">
 </head>
 <body>
+  <header>  
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="fan2foot.html"><img class="logo" src="logo.png" alt="logo foot"></a>
@@ -21,18 +23,89 @@
             <a class="nav-link active" aria-current="page" href="#">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="event-page.html">evenements</a>
+            <a class="nav-link" href="event-page.html">Evenements</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <header>  
     <div class="bg-img">
       <h1 class="text-center">Fan2foot</h1>
       <img class="ball-img" src="ball-img.png" alt="" srcset="">  
     </div>
   </header>
+  <main>
+    <div class="container-sm">
+      <h2 class="h2 display-2 text-center mt-2">La passion du foot</h2>
+      <p class="lead m-4">Notre association a but non lucratif a pour but de rassembler du monde autour de ce sport qui passionne les personnes de tout âge.</p>
+      <p class="lead m-4">Notre équipe est constituée de nombreux joueurs ayant éxercés ce sport dans le domaine professionnel ou a niveau semi pro durant une grande partie de carriere.</p>
+      <p class="lead m-4">Chaque évenement est encadrépar des personnes majeures et responsables capablent d assurer le bon déroulement des evenements organisés.</p>
+      <p class="lead m-4">Nous sommes heureux d avoir des locaux de qualités permettant d accueillir les joueurs.</p>
+      <p class="lead m-4">Notre classement des meilleurs buteurs de cette saison tous matchs confondus est le suivant :</p>
+        <table class="table table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">n°</th>
+              <th scope="col">Prenom</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Buts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Bilbon</td>
+              <td>Sacquet</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacquie</td>
+              <td>Michelle</td>
+              <td>69</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">willy le borgne</td>
+              <td>56</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="lead m-2">Notre classement des meilleurs passeurs cette saison tous matchs confondus est le suivant :</p>
+      <table class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">n°</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Buts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>pipin</td>
+            <td>touc</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td colspan="2">stephane de monaco</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>orphée</td>
+            <td>Mireille</td>
+            <td>22</td>
+          </tr>
+        </tbody>
+      </table>     
+      <p class="lead m-4">Comme précisé précédemment nous organisons des évenements. Pour y acceder vous n avez qu à cliquer sur le bouton ci-dessous.</p> 
+      <a href="event-page.html" type="button"class="btn btn-primary" id="btn-event">Acceder aux évenements</a>
+      <p class="lead m-4">Au plaisir de pouvoir partager cette passion avec vous. Que le foot reste un plaisir et un moment de partage de bons moments.</p>
+    </div>
+  </main>
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="4000">
@@ -57,16 +130,32 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
 <footer>
-  <h2 class="text-center">Nous contacter :</h2>
-  <ul >
-    <li><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/yt.svg" alt=""> Youtube</a></li>
-    <li><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/insta.svg" alt="" srcset=""> Instagram</a></li>
-    <li><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/fb.svg" alt="" srcset=""> Facebook</a></li>
+  <h3 class="text-center">Nous contacter :</h3>
+  <ul class="footer-list">
+    <li class="lead">Président Marc Lindif : </li>
+    <li class="lead">06-00-00-00-00</li>
+    <li class="lead mb-3">Adresse Mail :lelel@gmail.fr</li>
+    <li class="mt-2"><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/yt.svg" alt=""> Youtube</a></li>
+    <li class="mt-2"><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/insta.svg" alt="" srcset=""> Instagram</a></li>
+    <li class="mt-2"><a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/fb.svg" alt="" srcset=""> Facebook</a></li>
     <br>
-    <li><p>© 2022 John Doe</p></li>
   </ul>
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item active"><a class="page-link">1</a></li>
+      <li class="page-item" aria-current="page">
+        <a class="page-link" href="event-page.html">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="event-page.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <li class="copyright"><p class="text-center">© 2022 John Doe</p></li>
 </footer>
 </body>
 <script src="bootstrap.js"></script>
