@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  background-color: rgb(198, 236, 249);
 }
 .logo {
   width: 80px;
@@ -11,7 +12,6 @@ body {
 .bg-img {
   background-image: url(pelouse.jpg);
   object-fit: cover;
-  border-radius: 0.5rem;
 }
 h1 {
   padding-top: 2rem;
@@ -61,6 +61,21 @@ footer > ul{
 }
 .copyright {
   list-style-type: none;
+}
+hr {
+  width: 80%;
+  margin-left: 10%;
+
+}
+.card{
+  border-radius: 1.5rem;
+}
+.card > img {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+#btn-event {
+  margin-left: 29%;
 }
 /*----------------responsive--------------------*/
 @media screen and (min-width:768px) {
