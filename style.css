@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   background-color: rgb(198, 236, 249);
+  overflow-x: hidden;
 }
 .logo {
   width: 80px;
@@ -60,16 +61,23 @@ h3 {
 .progress {
   background-color: white;
 }
+.footer-list {
+  margin-left: -2rem;
+}
 footer {
   background: rgb(198, 236, 249);
-  padding: 1rem;
   padding-bottom: 2rem;
 }
 footer > ul{
   list-style-type: none;
   margin-top: 2rem;
-  margin-left: -2rem;
   text-align: center;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .footer-logo {
   width: 45px;
@@ -87,16 +95,37 @@ footer > ul{
   float: right;
   animation: footer-anim 6s ease-out infinite;
 }
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.galerie-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gsap {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.ball {
+  width: 90px;
+}
 @keyframes footer-anim {
   0% {
     transform: rotate(180deg);
   }
   50% {
-    transform: translatey(-20rem);
+    transform: translatey(-15rem);
   }
   100% {
     transform: rotate(180deg);
   }
+}
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /*----------------responsive--------------------*/
 @media screen and (min-width:768px) {
@@ -104,15 +133,15 @@ footer > ul{
     display:inline-block;
     vertical-align: middle;
   }
-  .footer-list > li.mt-2 {
-    display: inline;
-  }
   .table {
     width: 70%;
     margin-left: 15%;
   }
   #btn-event {
     margin-left: 42%;
+  }
+  .gsap {
+    display: none;
   }
   @keyframes footer-anim {
     0% {

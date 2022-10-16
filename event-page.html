@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="fan2foot.css">
+  <link rel="stylesheet" href="style.css">
   <title>fan2foot</title>
   <meta name="description" content="L'association de passionés de football de l'ain oraganise des evenements sur le theme du foot.">
 </head>
@@ -13,14 +13,14 @@
   <header>  
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="fan2foot.html"><img class="logo" src="logo.png" alt="logo foot"></a>
+        <a class="navbar-brand" href="index.html"><img class="logo" src="logo.png" alt="logo foot"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-3 mt-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="fan2foot.html">Accueil</a>
+              <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="event-page.html">Evenements</a>
@@ -39,8 +39,8 @@
    </header>
    <main>
      <div class="container">
-       <h2 class="h2 display-2 text-center m-4">Les rendez-vous à ne pas manquer :</h2>
-       <div class="card m-4" style="width: 18rem;">
+       <h2 class="h2 display-2 text-center m-4 mx-auto">Les rendez-vous à ne pas manquer :</h2>
+       <div class="card m-4 mx-auto" style="width: 18rem;">
         <img src="./pics/slider-pic (3).jpg" class="card-img-top" alt="joueur foot">
         <div class="card-body">
           <h5 class="card-title">Tournoi de charité</h5>
@@ -54,8 +54,14 @@
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
       <button type="btn" class="btn btn-primary m-4">participer</button>
+
+      <div class="gsap">
+        <img id="ballgsap" class="ball" src="ball-img.png" alt="">  
+      </div>
+
       <hr>
-      <div class="card m-4" style="width: 18rem;">
+
+      <div class="card m-4 mx-auto" style="width: 18rem;">
         <img src="./pics/slider-pic.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Coupe du monde</h5>
@@ -64,7 +70,9 @@
           <a href="#" class="btn btn-primary">En savoir plus</a>
         </div>
       </div>
-      <div class="card m-4" style="width: 18rem;">
+
+
+      <div class="card m-4 mx-auto" style="width: 18rem;">
         <img src="./children-team.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">rencontre inter-quartiers</h5>
@@ -73,7 +81,7 @@
           <a href="#" class="btn btn-primary">En savoir plus</a>
         </div>
       </div>
-      <div class="card m-4" style="width: 18rem;">
+      <div class="card m-4 mx-auto" style="width: 18rem;">
         <img src="./women-team.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Tournoi de foot féminin</h5>
@@ -155,12 +163,11 @@
       <li class="lead">Président Marc Lindif : </li>
       <li class="lead">06-00-00-00-00</li>
       <li class="lead mb-3">Adresse Mail :lelel@gmail.fr</li>
-      <li class="mt-2">
-        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/yt.svg" alt=""> Youtube</a></li>
-      <li class="mt-2">
-        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/insta.svg" alt="" srcset=""> Instagram</a></li>
-      <li class="mt-2">
-        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/fb.svg" alt="" srcset=""> Facebook</a></li>
+      <div class="logos">
+        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/yt.svg" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/insta.svg" alt="" srcset=""></a>
+        <a class="navbar-brand" href="#"><img class="footer-logo" src="./pics/fb.svg" alt="" srcset=""></a>
+      </div>
       <img class="balls-img-footer-left" src="ball-img.png" alt="">
       <img class="balls-img-footer-right" src="ball-img.png" alt="">
       <br>
@@ -168,9 +175,9 @@
     <nav class="footer-nav" aria-label="...">
       <ul class="pagination justify-content-center">
         <li class="page-item">
-          <a class="page-link" href="fan2foot.html">Previous</a>
+          <a class="page-link" href="index.html">Prev.</a>
         </li>
-        <li class="page-item"><a class="page-link" href="fan2foot.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
         <li class="page-item active" aria-current="page">
           <span class="page-link">2</span>
         </li>
@@ -183,5 +190,8 @@
     <li class="copyright"><p class="text-center">© 2022 John Doe</p></li>
   </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 <script src="bootstrap.js"></script>
 </html>
