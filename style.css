@@ -10,6 +10,18 @@ body {
 .nav-link {
   font-size: 1.5rem;
 }
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.nav-item {
+  margin-right: 2rem;
+}
 .bg-img {
   background-image: url(pelouse.jpg);
   object-fit: cover;
@@ -21,6 +33,10 @@ hr {
 h1 {
   padding-top: 2rem;
   font-size: 3.4rem;
+  text-decoration: underline;
+}
+h3 {
+  font-weight: bolder;
   text-decoration: underline;
 }
 .ball-img {
@@ -44,16 +60,12 @@ h1 {
    max-height: 500px;
    object-fit: cover;
 }
-h3 {
-  font-weight: bolder;
-  text-decoration: underline;
-}
 .card{
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 .card > img {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 #btn-event {
   margin-left: 29%;
@@ -61,6 +73,7 @@ h3 {
 .progress {
   background-color: white;
 }
+/*---------------footer---------------------*/
 .footer-list {
   margin-left: -2rem;
 }
@@ -95,44 +108,6 @@ footer > ul{
   float: right;
   animation: footer-anim 6s ease-out infinite;
 }
-.navbar-brand {
-  margin: 0;
-  padding: 0;
-}
-.galerie-img {
-  display: flex;
-  flex-wrap: wrap;
-}
-.navbar-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.form-group {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container > .card {
-  width: 100%;
-}
-.container button {
-  width: 200px;
-}
-.ball {
-  width: 90px;
-}
-.progress {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
 @keyframes footer-anim {
   0% {
     transform: rotate(180deg);
@@ -148,6 +123,37 @@ footer > ul{
   width: 100%;
   display: flex;
   justify-content: center;
+}
+/*-------------------galerie-------------------------*/
+.galerie-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/*--------------event page-----------------*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container > .card {
+  width: 100%;
+}
+.container button {
+  width: 200px;
+}
+.ball {
+  width: 90px;
 }
 /*----------------responsive--------------------*/
 @media screen and (min-width:768px) {
